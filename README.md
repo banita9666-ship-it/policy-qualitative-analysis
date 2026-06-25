@@ -1,12 +1,12 @@
 # Policy Qualitative Analysis Skill
 
-面向 Codex 和 Claude Code 的政策文本质性与混合方法分析 skill，适用于中文公共政策文本研究、政策工具分析、PMC 指数评价、扎根理论编码、话语分析、社会网络分析和学术报告撰写。
+面向 Codex 和 Claude Code 的政策文本质性与混合方法分析 skill，适用于中文、英文及中英混合政策文本研究、政策工具分析、PMC 指数评价、扎根理论编码、话语分析、社会网络分析和学术报告撰写。
 
 ## 内容
 
 - `policy-qualitative-analysis/`：可安装的 skill 本体。
 - `policy-qualitative-analysis/SKILL.md`：触发描述与核心工作流。
-- `policy-qualitative-analysis/references/`：方法体系、框架模板、编码与信效度、报告规范、政策类型适配指南。
+- `policy-qualitative-analysis/references/`：方法体系、框架模板、编码与信效度、报告规范、政策类型适配、双语政策文本适配指南。
 - `AGENTS.md`：Codex/agent 仓库级入口。
 - `CLAUDE.md`：Claude Code 仓库级入口。
 
@@ -23,7 +23,7 @@ Copy-Item -Recurse .\policy-qualitative-analysis "$env:USERPROFILE\.codex\skills
 在 Codex 中显式调用：
 
 ```text
-Use $policy-qualitative-analysis to design a coding framework for central-level education policy documents from 2015 to 2025.
+Use $policy-qualitative-analysis to design a bilingual coding framework for Chinese and English education policy documents from 2015 to 2025.
 ```
 
 ## Claude Code 接入
@@ -47,6 +47,7 @@ Read ./policy-qualitative-analysis/SKILL.md and follow it to design a policy qua
 - 设计政策文本研究方案、样本筛选标准和分析流程。
 - 选择内容分析、政策工具框架、PMC 指数、扎根理论、话语分析、叙事政策框架或社会网络分析。
 - 构建政策工具、政策目标、政策主体、政策力度等编码框架。
+- 处理中英文政策文本、官方译本、研究者译文和跨国政策比较中的术语等值问题。
 - 编写编码手册、信效度检验方案和研究报告结构。
 - 将政策分析结果组织为论文、学位论文章节或政策评估报告。
 
