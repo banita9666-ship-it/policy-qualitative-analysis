@@ -13,7 +13,7 @@
 ## 提交前检查
 
 ```powershell
-python "$env:USERPROFILE\.codex\skills\.system\skill-creator\scripts\quick_validate.py" .\policy-text-qualitative-analysis
+python "$env:USERPROFILE\.codex\skills\.system\skill-creator\scripts\quick_validate.py" .\policy-qualitative-analysis
 ```
 
 如果校验失败，先修复 `SKILL.md` frontmatter、命名或目录问题。

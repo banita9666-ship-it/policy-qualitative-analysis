@@ -1,27 +1,46 @@
-# Policy Text Qualitative Analysis Skill
+# Policy Qualitative Analysis Skill
 
-面向 Codex 的政策文本质性与混合方法分析 skill，适用于中文公共政策文本研究、政策工具分析、PMC 指数评价、扎根理论编码、话语分析、社会网络分析和学术报告撰写。
+面向 Codex 和 Claude Code 的政策文本质性与混合方法分析 skill，适用于中文公共政策文本研究、政策工具分析、PMC 指数评价、扎根理论编码、话语分析、社会网络分析和学术报告撰写。
 
 ## 内容
 
-- `policy-text-qualitative-analysis/`：可安装的 Codex skill 本体。
-- `policy-text-qualitative-analysis/SKILL.md`：触发描述与核心工作流。
-- `policy-text-qualitative-analysis/references/`：方法体系、框架模板、编码与信效度、报告规范、政策类型适配指南。
-- `examples/`：示例可视化面板和示例输出图。示例数据为模拟数据，仅用于展示 skill 方法论如何映射到可视化产出。
+- `policy-qualitative-analysis/`：可安装的 skill 本体。
+- `policy-qualitative-analysis/SKILL.md`：触发描述与核心工作流。
+- `policy-qualitative-analysis/references/`：方法体系、框架模板、编码与信效度、报告规范、政策类型适配指南。
+- `AGENTS.md`：Codex/agent 仓库级入口。
+- `CLAUDE.md`：Claude Code 仓库级入口。
 
-## 安装
+本仓库不包含示例工程和示例输出图，保持 skill 发布包简洁。
+
+## Codex 接入
 
 将 skill 文件夹复制到本机 Codex skills 目录：
 
 ```powershell
-Copy-Item -Recurse .\policy-text-qualitative-analysis "$env:USERPROFILE\.codex\skills\policy-text-qualitative-analysis"
+Copy-Item -Recurse .\policy-qualitative-analysis "$env:USERPROFILE\.codex\skills\policy-qualitative-analysis"
 ```
 
-也可以在 Codex 中显式调用：
+在 Codex 中显式调用：
 
 ```text
-Use $policy-text-qualitative-analysis to design a coding framework for central-level education policy documents from 2015 to 2025.
+Use $policy-qualitative-analysis to design a coding framework for central-level education policy documents from 2015 to 2025.
 ```
+
+## Claude Code 接入
+
+Claude Code 可直接读取仓库根目录的 `CLAUDE.md`，该文件会指向本 skill。也可以把本 skill 当作项目级方法说明复制到其他项目：
+
+```powershell
+Copy-Item .\policy-qualitative-analysis\SKILL.md .\CLAUDE.md
+```
+
+或在 Claude Code 提示中指定：
+
+```text
+Read ./policy-qualitative-analysis/SKILL.md and follow it to design a policy qualitative analysis workflow.
+```
+
+需要更完整的上下文时，让 Claude Code 继续读取 `policy-qualitative-analysis/references/` 中与任务相关的文件。
 
 ## 适用场景
 

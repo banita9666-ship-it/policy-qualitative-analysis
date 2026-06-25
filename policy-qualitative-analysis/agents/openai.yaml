@@ -1,7 +1,7 @@
 interface:
   display_name: "政策文本质性分析"
   short_description: "设计政策文本分析框架、编码与报告"
-  default_prompt: "Use $policy-text-qualitative-analysis to design a rigorous policy text analysis plan and reporting structure."
+  default_prompt: "Use $policy-qualitative-analysis to design a rigorous policy text analysis plan and reporting structure."
 
 policy:
   allow_implicit_invocation: true

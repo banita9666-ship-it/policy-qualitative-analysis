@@ -1,5 +1,5 @@
 ---
-name: policy-text-qualitative-analysis
+name: policy-qualitative-analysis
 description: 政策文本质性与混合方法分析指南。Use when Codex needs to design or execute policy text research, build coding frameworks, choose methods such as content analysis, policy tools, PMC index, grounded theory, discourse analysis, social network analysis, validate coding reliability, or draft academic policy analysis reports in Chinese.
 ---
 
