@@ -1,0 +1,24 @@
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Archives and build outputs
+*.zip
+*.tar.gz
+dist/
+build/
+
+# Node/Python
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local scratch
+tmp/
+temp/
+.env
+.env.*

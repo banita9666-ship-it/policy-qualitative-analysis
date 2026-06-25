@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: "Policy Text Qualitative Analysis Skill"
+message: "If you use this skill in academic or applied work, please cite the repository."
+type: software
+authors:
+  - name: "hxy"
+date-released: 2026-06-25
+license: MIT
