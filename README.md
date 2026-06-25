@@ -1,6 +1,6 @@
 # Policy Qualitative Analysis Skill
 
-面向 Codex 和 Claude Code 的政策文本质性与混合方法分析 skill，适用于中文、英文及中英混合政策文本研究、政策工具分析、PMC 指数评价、扎根理论编码、话语分析、社会网络分析和学术报告撰写。
+面向 RedSkill、Codex 和 Claude Code 的政策文本质性与混合方法分析 skill，适用于中文、英文及中英混合政策文本研究、政策工具分析、PMC 指数评价、扎根理论编码、话语分析、社会网络分析和学术报告撰写。
 
 ## 内容
 
@@ -9,8 +9,36 @@
 - `policy-qualitative-analysis/references/`：方法体系、框架模板、编码与信效度、报告规范、政策类型适配、双语政策文本适配指南。
 - `AGENTS.md`：Codex/agent 仓库级入口。
 - `CLAUDE.md`：Claude Code 仓库级入口。
+- `REDSKILL.md`：RedSkill 商店与 CLI 安装入口。
+- `redskill.json`：RedSkill 发布元数据。
 
 本仓库不包含示例工程和示例输出图，保持 skill 发布包简洁。
+
+## RedSkill 接入
+
+如果已经安装 RedSkill CLI，直接安装：
+
+```bash
+redskill install policy-qualitative-analysis
+```
+
+如果尚未安装 RedSkill CLI，先按官方安装脚本安装：
+
+```bash
+curl -fsSL https://fe-video-qc.xhscdn.com/fe-platform-file/104101b8320fbjem2620653u0hejenq0004pf88g6ask5i.sh | bash
+```
+
+只安装 CLI：
+
+```bash
+curl -fsSL https://fe-video-qc.xhscdn.com/fe-platform-file/104101b8320fbjem2620653u0hejenq0004pf88g6ask5i.sh | bash -s -- --cli-only
+```
+
+安装后可直接复制使用：
+
+```text
+Use $policy-qualitative-analysis to design a bilingual policy text coding framework for Chinese and English policy documents.
+```
 
 ## Codex 接入
 

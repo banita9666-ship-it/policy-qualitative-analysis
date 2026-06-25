@@ -1,0 +1,25 @@
+{
+  "identifier": "policy-qualitative-analysis",
+  "name": "Policy Qualitative Analysis",
+  "display_name": "中英文政策文本质性分析",
+  "version": "0.1.0",
+  "description": "面向中文、英文及中英混合政策文本的质性与混合方法分析技能，支持政策工具分析、PMC指数、扎根理论、话语分析、跨语种编码与报告撰写。",
+  "author": "banita",
+  "license": "MIT",
+  "homepage": "https://github.com/banita9666-ship-it/policy-qualitative-analysis",
+  "repository": "https://github.com/banita9666-ship-it/policy-qualitative-analysis",
+  "tags": [
+    "policy-analysis",
+    "qualitative-analysis",
+    "bilingual",
+    "coding-framework",
+    "grounded-theory",
+    "pmc-index"
+  ],
+  "entrypoints": {
+    "agents": "AGENTS.md",
+    "claude": "CLAUDE.md",
+    "codex_skill": "policy-qualitative-analysis/SKILL.md",
+    "redskill": "REDSKILL.md"
+  }
+}
